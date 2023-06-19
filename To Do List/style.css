@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F9F7F3;
+}
+
+.form {
+  position: absolute;
+  top: 30%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 400px;
+  background-color:#16425B;
+  border-radius: 10px;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  border: none;
+  font-size: 20px;
+}
+
+.input::placeholder {
+  color:#465362;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  list-style-type: none;
+  padding: 20px;
+  border-top: dotted;
+  border-radius: #465362;
+  position: relative;
+  color: white;
+}
+
+.list li .fa-trash {
+  color: red;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.list li .fa-check-square {
+  color: green;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+
+.list li.checked {
+  color:#D9DCD6;
+  text-decoration: line-through;
+}
+
+.list li.checked.fa-check-square  {
+  color: #D9DCD6;
+}
