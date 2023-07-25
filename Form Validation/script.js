@@ -14,6 +14,26 @@ function validateInputs() {
   const emailVal = email.value.trim();
   const passwordVal = password.value.trim();
   const cpasswordVal = cpassword.value.trim();
+  let success = true;
+
+  //Username
+  if (usernameVal === "") {
+    setError(username, "Username is required");
+  } else {
+    setSuccess(username);
+  }
+
+  //email
+
+  if (emailVal === "") {
+    success = false;
+    setError(email, "Email is required");
+  } else if (!validateEmail(emailVal)) {
+    success = false;
+    setError(email, "Please enter a valid email");
+  } else {
+    setSuccess(email);
+  }
 }
 
 function setError(element, message) {
