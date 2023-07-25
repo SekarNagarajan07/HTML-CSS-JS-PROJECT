@@ -36,3 +36,34 @@ h1 {
   font-size: 20px;
   width: 100%;
 }
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 5px;
+  padding: 10px 0;
+  border: 1px solid #03071e;
+}
+
+.input-group input:focus {
+  outline: 0;
+}
+
+.input-group .error {
+  color: #9d0208;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.input-group .success input {
+  border-color: #1b4332;
+}
+
+.input-group.error input {
+  border-color: #9d0208;
+}
