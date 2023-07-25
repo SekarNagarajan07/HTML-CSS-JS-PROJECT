@@ -15,3 +15,8 @@ function validateInputs() {
   const passwordVal = password.value.trim();
   const cpasswordVal = cpassword.value.trim();
 }
+
+function setError(element, message) {
+  const inputGroup = element.parentElement;
+  const errorElement = inputGroup.querySelector(".error");
+}
