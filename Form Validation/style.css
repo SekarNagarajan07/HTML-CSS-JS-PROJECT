@@ -23,3 +23,16 @@ h1 {
   text-align: center;
   color: #03071e;
 }
+
+#form button {
+  background-color: #03071e;
+  color: #edf2f4;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 1px solid #03071e;
+  padding: 10px;
+  margin: 20px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+}
