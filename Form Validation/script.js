@@ -34,6 +34,31 @@ function validateInputs() {
   } else {
     setSuccess(email);
   }
+
+  //password
+
+  if (passwordVal === "") {
+    setError(password, "Password is required");
+  } else if (passwordVal.length < 8) {
+    success = false;
+    setError(password, "Pasword must be atleast 8 characters long");
+  } else {
+    setSuccess(password);
+  }
+
+  //confirm password
+
+  if (cpasswordVal === "") {
+    success = false;
+    setError(cpassword, "Confirm");
+  } else if (cpasswordVal !== passwordVal) {
+    success = false;
+    setError(cpassword, "Password does not match");
+  } else {
+    setSuccess(cpassword);
+  }
+
+  return success;
 }
 
 function setError(element, message) {
