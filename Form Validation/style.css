@@ -6,3 +6,20 @@ body {
   padding: 0;
   background-color: #415a77;
 }
+
+body {
+  background-attachment: fixed;
+}
+
+#form {
+  width: 400px;
+  margin: 20vh auto 0 auto;
+  background-color: #edf2f4;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #03071e;
+}
