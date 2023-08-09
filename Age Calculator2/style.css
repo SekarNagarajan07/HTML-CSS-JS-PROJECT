@@ -54,6 +54,11 @@ h1 {
   justify-content: center;
 }
 
+p {
+  font-size: 15px;
+  color: #2c393f;
+}
+
 .lower-part {
   display: flex;
   justify-content: space-between;
