@@ -42,8 +42,8 @@ h1 {
 }
 
 .upper-part div {
-  height: 30px;
-  padding: 5px;
+  height: 40px;
+  padding: 10px;
   font-size: 20px;
   color: #051923;
   border-radius: 5px;
@@ -61,5 +61,33 @@ h1 {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   margin-top: 30px;
-  background-color: #051923;
+  background-color: #2c393f;
+}
+
+input {
+  width: 60%;
+  height: 50px;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: #f6fff8;
+  color: #003049;
+}
+
+button {
+  width: 35%;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: #f6fff8;
+  color: #003049;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #003049;
+  color: #f6fff8;
+  transition: all 0.2s ease-in-out;
 }
