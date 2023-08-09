@@ -37,5 +37,16 @@ function calculateAge() {
 
   if (currentMonth >= inputMonth) {
     resultMonth = currentMonth - inputMonth;
+  } else {
+    resultYear--;
+    resultMonth = 12 + currentMonth - inputMonth;
+  }
+
+  if (currentDate >= inputDate) {
+    resultDate = currentDate - inputDate;
+  } else {
+    resultMonth--;
+    let days = months[currentMonth];
+    console.log(days);
   }
 }
