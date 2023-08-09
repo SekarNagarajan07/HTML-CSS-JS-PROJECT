@@ -19,4 +19,23 @@ function calculateAge() {
   let currentYear = today.getFullYear();
   let currentMonth = today.getMonth() + 1;
   let currentDate = today.getDate();
+
+  leapYearCheck(currentYear);
+
+  if (
+    inputYear > currentYear ||
+    (inputMonth > currentMonth && inputYear == currentYear) ||
+    (inputDate > currentDate &&
+      inputMonth == currentMonth &&
+      inputYear == currentYear)
+  ) {
+    alert("You are not born yet");
+    displayResult("0", "0", "0");
+    return;
+  }
+  resultYear = currentYear - inputYear;
+
+  if (currentMonth >= inputMonth) {
+    resultMonth = currentMonth - inputMonth;
+  }
 }
