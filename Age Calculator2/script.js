@@ -47,6 +47,26 @@ function calculateAge() {
   } else {
     resultMonth--;
     let days = months[currentMonth];
-    console.log(days);
+    resultDate = days + currentDate - inputDate;
+    console.log(resultDate);
+    if (resultMonth < 0) {
+      resultMonth = 11;
+      resultYear--;
+    }
+  }
+  displayResult(resultDate, resultMonth, resultYear);
+}
+
+function displayResult(resultDate, resultMonth, resultYear) {
+  yearE1.innerHTML = resultYear;
+  monthE1.innerHTML = resultMonth;
+  dayE1.innerHTML = resultDate;
+}
+
+function leapYearCheck(year) {
+  if (year % 4 == 0 || (year % 100 == 0 && year % 400 == 0)) {
+    months[1] = 29;
+  } else {
+    months[1] = 28;
   }
 }
